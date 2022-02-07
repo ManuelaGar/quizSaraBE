@@ -1,0 +1,30 @@
+.home {
+  background-color: var(--color-dark-grey);
+  min-height: 100%;
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  font-family: 'SFProDisplay';
+}
+
+.home-container {
+  padding: 10% 20%;
+}
+
+.home-container h1 {
+  font-size: 6rem;
+  margin-bottom: 5%;
+  letter-spacing: 5px;
+}
+
+.home-btn {
+  width: 170px;
+  background-color: var(--color-yellow);
+  border-radius: 30px;
+  padding: 20px 25px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-family: 'SFProDisplay';
+  font-weight: 400;
+  border: 1px solid red;
+}

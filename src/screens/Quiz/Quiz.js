@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { getQuestions } from '../quiz/getQuestions'
-import { capitalizeFirstLetter } from '../helpers/style_string'
-import { resultBank } from '../quiz/resultBank'
+import { getQuestions } from '../../quiz/getQuestions'
+import { capitalizeFirstLetter } from '../../helpers/style_string'
+import { resultBank } from '../../quiz/resultBank'
+import './Quiz.css'
 
 function Quiz() {
   const [answer, setAnswer] = useState([])
