@@ -57,6 +57,18 @@
 }
 
 @media (max-width: 1028px) {
+  .home-container .eye {
+    bottom: 220px;
+    left: 20px;
+    width: 20vw;
+  }
+
+  .home-container .spiral {
+    top: -8px;
+    right: 0;
+    height: 40vw;
+  }
+
   .home-container h2 {
     font-size: 1.5rem;
   }
