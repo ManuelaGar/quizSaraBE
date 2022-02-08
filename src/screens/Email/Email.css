@@ -1,0 +1,103 @@
+.home-container .eye {
+  position: absolute;
+  bottom: 130px;
+  left: 200px;
+  width: 13vw;
+}
+
+.home-container .spiral {
+  position: absolute;
+  top: -10px;
+  right: 150px;
+  height: 18vw;
+}
+
+.home-container h2 {
+  color: var(--color-white);
+  font-style: italic;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.home-container input {
+  border-radius: 30px;
+  border: 2px solid var(--color-yellow);
+  background-color: transparent;
+  margin: 2% 15% 5%;
+  color: var(--color-white);
+  text-indent: 10px;
+  height: 40px;
+  width: 70%;
+}
+
+.home-container input:focus {
+  outline: none !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.home-container p {
+  color: var(--color-white);
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 1.7rem;
+  margin: 2% 0;
+}
+
+.home-container p.email-txt {
+  line-height: 2rem;
+  margin: 7% 0;
+}
+
+.home-container p.bold-txt {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@media (max-width: 1028px) {
+  .home-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-container input {
+    border: 1px solid var(--color-yellow);
+    margin: 5% 5% 10%;
+    height: 30px;
+    width: 90%;
+  }
+
+  .home-container p {
+    font-size: 0.8rem;
+    margin: 10% 0;
+  }
+
+  .home-container p.email-txt {
+    line-height: inherit;
+    margin-bottom: 10%;
+  }
+
+  .home-container p.bold-txt {
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .email-container .center-container {
+    margin: 0 5%;
+  }
+
+  .email-container .home-btn-container {
+    width: 190px;
+  }
+
+  .email-container .home-btn {
+    width: 180px;
+    margin: 5px 2px;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    border: 1px solid var(--color-dark-grey);
+    color: var(--color-dark-grey);
+  }
+}
+

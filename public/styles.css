@@ -3,6 +3,7 @@
 :root {
   --color-dark-grey: #1d1d1b;
   --color-yellow: #fccf00;
+  --color-yellow-hover: #ffc400;
   --color-white: #ffffff;
 }
 
@@ -15,5 +16,7 @@
 html,
 body,
 #root {
+  background-color: var(--color-dark-grey);
   height: 100%;
+  font-family: 'SFProDisplay' !important;
 }
