@@ -3,7 +3,7 @@ import { Quiz } from './Quiz.js'
 export function getQuestions () {
   return [
     new Quiz(
-      <h1 className='question'>¿Mi marca tiene <div className='rounded-txt-2'>mucho</div> por contar?</h1>,
+      <h1 className='question'>¿Mi marca tiene <span className='rounded-txt-2'>mucho</span> por contar?</h1>,
       ['mucho', 'poco']
     ),
     new Quiz(

@@ -33,7 +33,7 @@ function Quiz () {
           ? (
             <div className='content'>
               {/* {(question === 0 || question === 3) && <img className='berer-circle' src={bererCircle} alt='berer-circle' />} */}
-              <h1 className={question === 3 ? 'smaller-question' : 'question'}>{questionBank[question].questionText}</h1>
+              {questionBank[question].questionText}
               <div className='buttons'>
                 <button
                   className='btn'
