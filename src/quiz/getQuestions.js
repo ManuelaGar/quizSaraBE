@@ -3,20 +3,20 @@ import { Quiz } from './Quiz.js'
 export function getQuestions () {
   return [
     new Quiz(
-      '¿Mi marca tiene mucho por contar? (¿fue fácil o difícil responder Etnaveler?)',
+      <h1 className='question'>¿Mi marca tiene <div className='rounded-txt-2'>mucho</div> por contar?</h1>,
       ['mucho', 'poco']
     ),
     new Quiz(
-      '¿Mi tema es popular? (¿es un tema del que muchos hablan o del que muchos gustan?)',
-      ['popular', 'no popular']
+      <h1 className='question'>¿Mi tema es popular?</h1>,
+      ['si', 'no']
     ),
     new Quiz(
-      '¿Ya tengo fans? (¿tengo una comunidad ya en instagram. Mis seguidores interactúan conmigo?)',
-      ['fans', 'sin fans']
+      <h1 className='question'>¿Ya tengo <span className='underline'>fans</span>?</h1>,
+      ['si', 'no']
     ),
     new Quiz(
-      '¿Cuento con equipo humano para desarrollar el contenido? (¿tengo gente con habilidades de diseño, storytelling y estrategia digital?) ',
-      ['equipo', 'sin equipo']
+      <h1 className='question smaller-question'>¿Cuento con equipo humano para <span className='rounded-txt'>desarrollar</span> el contenido?</h1>,
+      ['si', 'no']
     )
   ]
 }

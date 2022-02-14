@@ -1,0 +1,136 @@
+.quiz{
+  height: 100%;
+  color: var(--color-white);
+}
+
+.quiz-container {
+  height: 100%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+
+.content {
+  position: relative;
+}
+
+.quiz-container .question {
+  margin-top: 2%;
+  font-size: 5.5rem;
+  margin-bottom: 5%;
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: 700;
+  padding: 0 3%;
+  z-index: 2;
+}
+
+.quiz-container .smaller-question {
+  font-size: 5rem !important;
+}
+
+.quiz-container p {
+  position: absolute;
+  top: 7%;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+}
+
+.quiz-container .rounded-txt-2 {
+  display: inline-flex;
+  width: 400px;
+  height: 70px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 2%; */
+  border: 2px solid var(--color-yellow);
+}
+
+.quiz-container .underline {
+  padding-bottom: 0 !important;
+  border-bottom: 3px solid var(--color-yellow);
+}
+
+.quiz-container .smaller-question span {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.quiz-container .buttons {
+  text-align: center;
+}
+
+.quiz-container .btn {
+  font-weight: 900;
+  font-size: 2.2rem;
+  letter-spacing: 10px;
+  font-family: SFCompactDisplay !important;
+  color: var(--color-white);
+  background-color: var(--color-dark-grey);
+  border: 3px solid var(--color-yellow);
+  border-radius: 60px;
+  width: 30%;
+  margin: 0 4%;
+  padding: 1% 0 !important;
+}
+
+.quiz-container .btn:hover {
+  color: var(--color-dark-grey);
+  background-color: var(--color-yellow);
+}
+
+/* Icons */
+
+.quiz-container .circles {
+  width: 15vw;
+  position: fixed;
+  bottom: -10px;
+  right: 3%;
+  z-index: 3;
+}
+
+.quiz-container .spiral {
+  right: 20px !important;
+}
+
+.quiz-container .spiral2 {
+  position: fixed;
+  bottom: -60px;
+  left: 20px;
+  height: 18vw;
+}
+
+.quiz-container .arrow {
+  position: fixed;
+  bottom: -70px;
+  left: 20px;
+  height: 18vw;
+}
+
+.quiz-container .berer-circle {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  margin-right: 10vw;
+  height: 12vw;
+}
+
+.rotateimg180 {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.rotateimg90 {
+  -webkit-transform:rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}

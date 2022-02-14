@@ -1,11 +1,11 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 
 import sun from '../../assets/icons/sun2.svg'
 import webBg from '../../assets/images/web-bg.png'
 import mobileBg from '../../assets/images/mobile-bg.png'
 import './Home.css'
 
-function Home() {
+function Home () {
   const navigate = useNavigate()
 
   return (
