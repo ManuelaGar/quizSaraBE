@@ -59,6 +59,7 @@ function Quiz () {
             )
           : (
             <div className='content2'>
+              {window.innerWidth <= 1028 && <p className='top'>BE CREATIVE . BE SMART . BE BERER</p>}
               <p className='score'>{resultBank(answer).score} <span className='underline'>VECES</span></p>
               <div className='img-container'>
                 {resultBank(answer).img}
@@ -69,6 +70,7 @@ function Quiz () {
                   Reiniciar
                 </button>
               </div>
+              {window.innerWidth <= 1028 && <p className='bottom'>BERER . BERER . BERER . BERER . BERER</p>}
             </div>
             )}
         {question === 0 && <img className='arrow rotateimg90' src={arrow} alt='arrow' />}
