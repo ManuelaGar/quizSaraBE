@@ -27,7 +27,7 @@ function Quiz () {
   return (
     <div className='quiz'>
       <div className='quiz-container'>
-        {question < 4 && <p>{'00' + (question + 1)}</p>}
+        {question < 4 && <p className='question-num'>{'00' + (question + 1)}</p>}
         {question === 0 && <img className='spiral' src={spiral} alt='spiral' />}
         {question < 4
           ? (
@@ -54,20 +54,25 @@ function Quiz () {
                   {(questionBank[question].questionAnswer[1]).toUpperCase()}
                 </button>
               </div>
+              <img className='circles' src={circles} alt='circles' />
             </div>
             )
           : (
-            <div>
-              <p>{resultBank(answer).score}</p>
-              <p>{resultBank(answer).text}</p>
-              <button type='button' name='reset' onClick={() => handleReset()}>
-                Reiniciar
-              </button>
+            <div className='content2'>
+              <p className='score'>{resultBank(answer).score} <span className='underline'>VECES</span></p>
+              <div className='img-container'>
+                {resultBank(answer).img}
+              </div>
+              <p className='score-text'>{resultBank(answer).text}</p>
+              <div className='button-restart'>
+                <button className='btn' type='button' name='reset' onClick={() => handleReset()}>
+                  Reiniciar
+                </button>
+              </div>
             </div>
             )}
         {question === 0 && <img className='arrow rotateimg90' src={arrow} alt='arrow' />}
         {question === 3 && <img className='spiral2 rotateimg180' src={spiral} alt='spiral' />}
-        <img className='circles' src={circles} alt='circles' />
       </div>
     </div>
   )
