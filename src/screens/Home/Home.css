@@ -42,6 +42,7 @@
   border-radius: 60px;
   padding: 0 1.5%;
   border: 2px solid var(--color-yellow);
+  letter-spacing: 7px;
 }
 
 .center-container {

@@ -33,7 +33,7 @@
   margin-bottom: 5%;
   text-align: center;
   font-weight: 700;
-  padding: 0 3%;
+  padding: 0 7%;
   z-index: 2;
 }
 
@@ -68,7 +68,9 @@
 }
 
 .quiz-container .buttons {
+  position: relative;
   text-align: center;
+  z-index: 5 !important;
 }
 
 .quiz-container .btn {
@@ -91,9 +93,8 @@
 }
 
 .quiz-container .content2 {
-  min-height: 100%;
   text-align: center;
-  margin: 7% 0;
+  margin: auto 0;
 }
 
 .quiz-container .content2 p {
@@ -142,6 +143,63 @@
   right: 20px !important;
 }
 
+.quiz-container .sun-black-1 {
+  position: absolute;
+  width: 30vw;
+  top: -3%;
+  left: 16%;
+}
+
+.quiz-container .sun-black-2 {
+  position: absolute;
+  width: 32vw;
+  top: 7%;
+  right: 12%;
+}
+
+.quiz-container .sun-black-3 {
+  position: absolute;
+  width: 35vw;
+  top: -5%;
+  right: 12%;
+}
+
+.quiz-container .sun-1 {
+  position: absolute;
+  width: 15vw;
+  top: 8%;
+  left: 12%;
+}
+
+.quiz-container .sun-2 {
+  position: absolute;
+  width: 15vw;
+  top: 10%;
+  left: 15%;
+}
+
+.quiz-container .sun-3 {
+  position: absolute;
+  width: 8vw;
+  top: 5%;
+  right: 30%;
+}
+
+.quiz-container .be-berer {
+  position: absolute;
+  width: 20vw;
+  bottom: 21%;
+  right: 25%;
+  z-index: 1;
+}
+
+.quiz-container .eye {
+  position: absolute;
+  width: 15vw;
+  top: 11%;
+  left: 24%;
+}
+
 .quiz-container .spiral2 {
   position: fixed;
   bottom: -60px;
@@ -156,12 +214,18 @@
   height: 18vw;
 }
 
+.quiz-container .arrow-2 {
+  position: absolute;
+  bottom: 31%;
+  right: 12%;
+  height: 18vw;
+}
+
 .quiz-container .berer-circle {
   position: absolute;
-  top: -25px;
-  right: 0;
-  margin-right: 10vw;
-  height: 12vw;
+  top: -80px;
+  right: 10px;
+  height: 15vw;
 }
 
 .rotateimg180 {

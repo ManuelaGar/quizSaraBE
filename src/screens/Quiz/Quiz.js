@@ -4,8 +4,13 @@ import { getQuestions } from '../../quiz/getQuestions'
 import { resultBank } from '../../quiz/resultBank'
 import circles from '../../assets/icons/circles.svg'
 import spiral from '../../assets/icons/spiral.svg'
+import sunBlack from '../../assets/icons/sun-black.svg'
+import beBerer from '../../assets/icons/be-berer.svg'
+import eye from '../../assets/icons/eye.svg'
 import arrow from '../../assets/icons/arrow.svg'
-// import bererCircle from '../../assets/icons/berer-circle.svg'
+import bererCircle from '../../assets/icons/we-do-it-berer.svg'
+import sun1 from '../../assets/icons/sun1.svg'
+import sun2 from '../../assets/icons/sun2.svg'
 import './Quiz.css'
 
 function Quiz () {
@@ -29,10 +34,30 @@ function Quiz () {
       <div className='quiz-container'>
         {question < 4 && <p className='question-num'>{'00' + (question + 1)}</p>}
         {question === 0 && <img className='spiral' src={spiral} alt='spiral' />}
+        {(question === 0 || question === 2) && <img className='arrow rotateimg90' src={arrow} alt='arrow' />}
+        {question === 1 &&
+          <div>
+            <img className='sun-black-1' src={sunBlack} alt='sun-black-1' />
+            <img className='sun-black-2' src={sunBlack} alt='sun-black-2' />
+            <img className='be-berer' src={beBerer} alt='be-berer' />
+            <img className='eye' src={eye} alt='eye' />
+          </div>}
+        {question === 2 &&
+          <div>
+            <img className='berer-circle' src={bererCircle} alt='berer-circle' />
+            <img className='sun-black-3' src={sunBlack} alt='sun-black-3' />
+            <img className='sun-2' src={sun2} alt='sun-2' />
+          </div>}
+        {question === 3 &&
+          <div>
+            <img className='sun-1' src={sun1} alt='sun-1' />
+            <img className='spiral2 rotateimg180' src={spiral} alt='spiral' />
+            <img className='arrow-2' src={arrow} alt='arrow-2' />
+          </div>}
+        {question === 4 && <img className='sun-3' src={sun1} alt='sun-3' />}
         {question < 4
           ? (
             <div className='content'>
-              {/* {(question === 0 || question === 3) && <img className='berer-circle' src={bererCircle} alt='berer-circle' />} */}
               {questionBank[question].questionText}
               <div className='buttons'>
                 <button
@@ -73,8 +98,6 @@ function Quiz () {
               {window.innerWidth <= 1028 && <p className='bottom'>BERER . BERER . BERER . BERER . BERER</p>}
             </div>
             )}
-        {question === 0 && <img className='arrow rotateimg90' src={arrow} alt='arrow' />}
-        {question === 3 && <img className='spiral2 rotateimg180' src={spiral} alt='spiral' />}
       </div>
     </div>
   )

@@ -7,7 +7,7 @@ export function getQuestions () {
       ['mucho', 'poco']
     ),
     new Quiz(
-      <h1 className='question'>¿Mi tema es popular?</h1>,
+      <h1 className='question'>¿Mi tema es<br />popular?</h1>,
       ['si', 'no']
     ),
     new Quiz(
@@ -15,7 +15,7 @@ export function getQuestions () {
       ['si', 'no']
     ),
     new Quiz(
-      <h1 className='question smaller-question'>¿Cuento con equipo humano para <span className='rounded-txt'>desarrollar</span> el contenido?</h1>,
+      <h1 className='question smaller-question'>¿Cuento con equipo<br />humano para <span className='rounded-txt'>desarrollar</span><br />el contenido?</h1>,
       ['si', 'no']
     )
   ]
