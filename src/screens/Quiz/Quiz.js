@@ -54,7 +54,6 @@ function Quiz () {
             <img className='spiral2 rotateimg180' src={spiral} alt='spiral' />
             <img className='arrow-2' src={arrow} alt='arrow-2' />
           </div>}
-        {question === 4 && <img className='sun-3' src={sun1} alt='sun-3' />}
         {question < 4
           ? (
             <div className='content'>
@@ -85,7 +84,10 @@ function Quiz () {
           : (
             <div className='content2'>
               {window.innerWidth <= 1028 && <p className='top'>BE CREATIVE . BE SMART . BE BERER</p>}
-              <p className='score'>{resultBank(answer).score} <span className='underline'>VECES</span></p>
+              <div className='score-container'>
+                <img className='sun-3' src={sun1} alt='sun-3' />
+                <p className='score'>{resultBank(answer).score} <span className='underline'>VECES</span></p>
+              </div>
               <div className='img-container'>
                 {resultBank(answer).img}
               </div>

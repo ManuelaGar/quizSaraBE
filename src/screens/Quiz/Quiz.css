@@ -55,6 +55,7 @@
   justify-content: center;
   align-items: center;
   border: 2px solid var(--color-yellow);
+  padding-bottom: 5px;
 }
 
 .quiz-container .underline {
@@ -99,6 +100,10 @@
 
 .quiz-container .content2 p {
   padding: 3% 0;
+}
+
+.quiz-container .score-container {
+  position: relative;
 }
 
 .quiz-container p.score {
@@ -181,8 +186,8 @@
 .quiz-container .sun-3 {
   position: absolute;
   width: 8vw;
-  top: 5%;
-  right: 30%;
+  top: -10px;
+  right: 29%;
 }
 
 .quiz-container .be-berer {
@@ -250,6 +255,37 @@
     min-height: 100%;
   }
 
+  /* Questions */
+
+  .quiz-container .question-num {
+    font-size: 2rem;
+  }
+
+  .quiz-container .question {
+    font-size: 2rem !important;
+    padding: 0 !important;
+  }
+
+  .quiz-container .rounded-txt-2 {
+    width: 130px !important;
+    height: 40px !important;
+  }
+
+  .quiz-container .buttons {
+    margin-top: 10%;
+    text-align: center !important;
+  }
+
+  .quiz-container .btn {
+    font-size: 1rem;
+    width: 40%;
+    text-align: center !important;
+    border: 2px solid var(--color-yellow);
+    padding: 1% 0 1% 3% !important;
+  }
+
+  /* Answers */
+
   .quiz-container p.top, .quiz-container p.bottom {
     position: absolute;
     left: 0;
@@ -261,4 +297,112 @@
     text-align: center;
   }
 
+  .quiz-container p.top {
+    top: 0;
+  }
+
+  .quiz-container p.bottom {
+    bottom: 0;
+  }
+
+  .quiz-container p.score {
+    font-size: 2rem;
+    padding-bottom: 0;
+  }
+
+  .quiz-container .img-container {
+    padding: 2%;
+    margin: 5% 0;
+  }
+
+  .quiz-container .result-img {
+    width: 15vh;
+  }
+
+  .quiz-container p.score-text {
+    font-size: 0.8rem;
+  }
+
+  .quiz-container .button-restart .btn {
+    margin-top: 5%;
+    width: 45%;
+  }
+
+  /* Icons */
+
+  .quiz-container .spiral {
+    height: 45vw !important;
+    right: 5px !important;
+  }
+
+  .quiz-container .circles {
+    width: 20vw;
+  }
+
+  .quiz-container .arrow {
+    left: -40px;
+    height: 45vw;
+  }
+
+  .quiz-container .sun-black-1 {
+    width: 45vw;
+    top: 26%;
+    left: 1%;
+  }
+
+  .quiz-container .eye {
+    top: 35%;
+    left: 15%;
+  }
+
+  .quiz-container .sun-black-2 {
+    width: 40vw;
+    top: 30%;
+    right: 8%;
+  }
+
+  .quiz-container .be-berer {
+    width: 30vw;
+    bottom: 38%;
+    right: 15%;
+  }
+
+  .quiz-container .sun-2 {
+    width: 20vw;
+    top: 30%;
+    left: 10%;
+  }
+
+  .quiz-container .sun-black-3 {
+    width: 50vw;
+    top: 30%;
+    right: 0;
+  }
+
+  .quiz-container .berer-circle {
+    height: 35vw;
+    top: -55px;
+  }
+
+  .quiz-container .sun-1 {
+    width: 20vw;
+    top: 20%;
+    left: 2%;
+  }
+
+  .quiz-container .arrow-2 {
+    display: none;
+  }
+
+  .quiz-container .spiral2 {
+    height: 40vw;
+    bottom: -20px;
+    left: 0;
+  }
+
+  .quiz-container .sun-3 {
+    width: 15vw;
+    top: -15px;
+    right: 0;
+  }
 }
